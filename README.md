@@ -67,6 +67,7 @@ Open [http://localhost:4001](http://localhost:4001) with your browser to see the
 # Todo List Appの使い方
 
 ## Todoを追加する
+<img width="811" alt="スクリーンショット 2024-04-22 16 44 03" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/cff58753-fa90-491c-827f-c1d9d10ccdb9">
 
 追加ボタンを押し、追加フォームを表示します。
 フォームの内容を入力してAddボタンを押します。
