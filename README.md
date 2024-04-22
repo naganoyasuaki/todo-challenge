@@ -73,9 +73,11 @@ npm run test
 ## Todoを追加する
 
 <img width="811" alt="スクリーンショット 2024-04-22 16 44 03" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/cff58753-fa90-491c-827f-c1d9d10ccdb9">
+
+画面下中央に表示されている追加ボタンを押し、追加フォームを表示します。※Todoが1件も登録されていない場合は、デフォルトで追加フォームが表示されます。
+
 <img width="808" alt="スクリーンショット 2024-04-22 16 45 32" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/11683f95-5bc1-41b1-a3ce-0c503f1376bf">
 
-追加ボタンを押し、追加フォームを表示します。
 フォームの内容を入力してAddボタンを押します。
 
 ## Todoを更新する
