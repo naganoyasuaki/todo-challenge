@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo List App 開発概要
 
-## Getting Started
+以下の仕様を満たすように実装する。
 
-First, run the development server:
+- [x] ToDoとしてタイトル、タスクの概要、完了予定日を登録できる
+- [x] ToDoの内容を更新できる
+- [x] 誤って入力したToDoを削除できる
+- [x] ToDoを完了できる
+  - [x] [ ] 完了したタスクは履歴として残される
+- [ ] ToDoのデータはAPIを用いて管理できること
+
+# 動作環境
+
+- node version 18.17以上
+- chrome
+
+# 主な使用技術
+
+| ツール          | 説明                                                    |
+| --------------- | ------------------------------------------------------- |
+| Typescript      | https://www.typescriptlang.org/docs/handbook/intro.html |
+| React v18       | https://react.dev/reference/react                       |
+| NextJS v14      | https://nextjs.org/                                     |
+| Redux Toolkit   | https://redux-toolkit.js.org/                           |
+| MUI             | https://mui.com/                                        |
+| React Hook Form | https://react-hook-form.com/                            |
+
+# 構造
+
+```bash
+src
+```
+
+# インストール
+
+```bash
+npm install
+```
+
+# 実行する
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4001](http://localhost:4001) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# テストする
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+しばらくお待ち下さい
+```
 
-## Learn More
+# Todo List Appの使い方
 
-To learn more about Next.js, take a look at the following resources:
+## Todoを追加する
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Todoを更新する
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Todoを完了する
 
-## Deploy on Vercel
+## Todoを削除する
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Todoをフィルタリングする
