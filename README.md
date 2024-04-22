@@ -83,6 +83,9 @@ npm run test
 <img width="808" alt="スクリーンショット 2024-04-22 16 46 55" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/6ea258a4-a642-4dec-83dc-4da9f02a99d9">
 
 Todoの右にある鉛筆アイコンをクリックして、編集モードにします。
+
+<img width="736" alt="スクリーンショット 2024-04-23 0 11 09" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/f1285240-9d16-49f3-90f0-cec68ff60824">
+
 フォームの内容を編集してUpdateボタンを押します。
 
 ## Todoを完了する
