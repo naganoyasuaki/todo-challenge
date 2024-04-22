@@ -74,19 +74,23 @@ Open [http://localhost:4001](http://localhost:4001) with your browser to see the
 フォームの内容を入力してAddボタンを押します。
 
 ## Todoを更新する
+<img width="808" alt="スクリーンショット 2024-04-22 16 46 55" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/6ea258a4-a642-4dec-83dc-4da9f02a99d9">
 
 Todoの右にある鉛筆アイコンをクリックして、編集モードにします。
 フォームの内容を編集してUpdateボタンを押します。
 
 ## Todoを完了する
+<img width="808" alt="スクリーンショット 2024-04-22 16 47 45" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/0c18ae04-1c27-43c5-b249-d65939fe0a96">
 
 Todoの左端のチェックマークをクリックします。チェックがついたら完了になります。
 
 ## Todoを削除する
+<img width="809" alt="スクリーンショット 2024-04-22 16 48 14" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/8299d26f-90de-4588-bf98-4c55c3c95c84">
 
 Todoの右にあるゴミ箱アイコンをクリックします。
 
 ## Todoをフィルタリングする
+<img width="809" alt="スクリーンショット 2024-04-22 16 48 30" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/4649f731-bc9a-455d-9bf8-c345f093d000">
 
 ヘッダーのラジオボタンを選択します。
 
