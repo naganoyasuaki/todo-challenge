@@ -6,7 +6,7 @@
 - [x] ToDoの内容を更新できる
 - [x] 誤って入力したToDoを削除できる
 - [x] ToDoを完了できる
-  - [x] [ ] 完了したタスクは履歴として残される
+  - [x] 完了したタスクは履歴として残される
 - [ ] ToDoのデータはAPIを用いて管理できること
 
 # 動作環境
@@ -30,18 +30,22 @@
 ```bash
 src/
 ├── app/ #UIコンポーネント
-│   │
 │   └── components/ #UIパーツ
 │
 ├── hooks/ #hooks
 │
 ├── store/ #状態管理
-│   │
 │   └── modules/ #redux modules
 │
 ├── theme/ #MUI theme設定
 │
 └── types/ #type
+```
+
+# リポジトリを取得する
+
+```bash
+git clone https://github.com/naganoyasuaki/todo-challenge.git
 ```
 
 # インストール
@@ -61,35 +65,45 @@ Open [http://localhost:4001](http://localhost:4001) with your browser to see the
 # テストする
 
 ```bash
-しばらくお待ち下さい
+npm run test
 ```
 
 # Todo List Appの使い方
 
 ## Todoを追加する
+
 <img width="811" alt="スクリーンショット 2024-04-22 16 44 03" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/cff58753-fa90-491c-827f-c1d9d10ccdb9">
+
+画面下中央に表示されている追加ボタンを押し、追加フォームを表示します。※Todoが1件も登録されていない場合は、デフォルトで追加フォームが表示されます。
+
 <img width="808" alt="スクリーンショット 2024-04-22 16 45 32" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/11683f95-5bc1-41b1-a3ce-0c503f1376bf">
 
-追加ボタンを押し、追加フォームを表示します。
 フォームの内容を入力してAddボタンを押します。
 
 ## Todoを更新する
+
 <img width="808" alt="スクリーンショット 2024-04-22 16 46 55" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/6ea258a4-a642-4dec-83dc-4da9f02a99d9">
 
 Todoの右にある鉛筆アイコンをクリックして、編集モードにします。
+
+<img width="736" alt="スクリーンショット 2024-04-23 0 11 09" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/f1285240-9d16-49f3-90f0-cec68ff60824">
+
 フォームの内容を編集してUpdateボタンを押します。
 
 ## Todoを完了する
+
 <img width="808" alt="スクリーンショット 2024-04-22 16 47 45" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/0c18ae04-1c27-43c5-b249-d65939fe0a96">
 
-Todoの左端のチェックマークをクリックします。チェックがついたら完了になります。
+Todoの左端のチェックボックスをクリックします。チェックがついたら完了になります。
 
 ## Todoを削除する
+
 <img width="809" alt="スクリーンショット 2024-04-22 16 48 14" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/8299d26f-90de-4588-bf98-4c55c3c95c84">
 
 Todoの右にあるゴミ箱アイコンをクリックします。
 
 ## Todoをフィルタリングする
+
 <img width="809" alt="スクリーンショット 2024-04-22 16 48 30" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/4649f731-bc9a-455d-9bf8-c345f093d000">
 
 ヘッダーのラジオボタンを選択します。
