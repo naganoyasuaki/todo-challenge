@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo List App 開発概要
 
-## Getting Started
+以下の仕様を満たすように実装する。
 
-First, run the development server:
+- [x] ToDoとしてタイトル、タスクの概要、完了予定日を登録できる
+- [x] ToDoの内容を更新できる
+- [x] 誤って入力したToDoを削除できる
+- [x] ToDoを完了できる
+  - [x] [ ] 完了したタスクは履歴として残される
+- [ ] ToDoのデータはAPIを用いて管理できること
+
+# 動作環境
+
+- node version 18.17以上
+- chrome
+
+# 主な使用技術
+
+| ツール          | 説明                                                    |
+| --------------- | ------------------------------------------------------- |
+| Typescript      | https://www.typescriptlang.org/docs/handbook/intro.html |
+| React v18       | https://react.dev/reference/react                       |
+| NextJS v14      | https://nextjs.org/                                     |
+| Redux Toolkit   | https://redux-toolkit.js.org/                           |
+| MUI             | https://mui.com/                                        |
+| React Hook Form | https://react-hook-form.com/                            |
+
+# 構造
+
+```bash
+src/
+├── app/ #UIコンポーネント
+│   │
+│   └── components/ #UIパーツ
+│
+├── hooks/ #hooks
+│
+├── store/ #状態管理
+│   │
+│   └── modules/ #redux modules
+│
+├── theme/ #MUI theme設定
+│
+└── types/ #type
+```
+
+# インストール
+
+```bash
+npm install
+```
+
+# 実行する
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4001](http://localhost:4001) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# テストする
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+しばらくお待ち下さい
+```
 
-## Learn More
+# Todo List Appの使い方
 
-To learn more about Next.js, take a look at the following resources:
+## Todoを追加する
+<img width="811" alt="スクリーンショット 2024-04-22 16 44 03" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/cff58753-fa90-491c-827f-c1d9d10ccdb9">
+<img width="808" alt="スクリーンショット 2024-04-22 16 45 32" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/11683f95-5bc1-41b1-a3ce-0c503f1376bf">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+追加ボタンを押し、追加フォームを表示します。
+フォームの内容を入力してAddボタンを押します。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Todoを更新する
+<img width="808" alt="スクリーンショット 2024-04-22 16 46 55" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/6ea258a4-a642-4dec-83dc-4da9f02a99d9">
 
-## Deploy on Vercel
+Todoの右にある鉛筆アイコンをクリックして、編集モードにします。
+フォームの内容を編集してUpdateボタンを押します。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Todoを完了する
+<img width="808" alt="スクリーンショット 2024-04-22 16 47 45" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/0c18ae04-1c27-43c5-b249-d65939fe0a96">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Todoの左端のチェックマークをクリックします。チェックがついたら完了になります。
+
+## Todoを削除する
+<img width="809" alt="スクリーンショット 2024-04-22 16 48 14" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/8299d26f-90de-4588-bf98-4c55c3c95c84">
+
+Todoの右にあるゴミ箱アイコンをクリックします。
+
+## Todoをフィルタリングする
+<img width="809" alt="スクリーンショット 2024-04-22 16 48 30" src="https://github.com/naganoyasuaki/todo-challenge/assets/1168878/4649f731-bc9a-455d-9bf8-c345f093d000">
+
+ヘッダーのラジオボタンを選択します。
+
+- All: すべてのTodoを表示します
+- Active: 未完了のTodoを表示します
+- Completed: 完了済みのTodoを表示します
