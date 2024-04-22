@@ -28,7 +28,20 @@
 # 構造
 
 ```bash
-src
+src/
+├── app/ #UIコンポーネント
+│   │
+│   └── components/ #UIパーツ
+│
+├── hooks/ #hooks
+│
+├── store/ #状態管理
+│   │
+│   └── modules/ #redux modules
+│
+├── theme/ #MUI theme設定
+│
+└── types/ #type
 ```
 
 # インストール
@@ -55,10 +68,26 @@ Open [http://localhost:4001](http://localhost:4001) with your browser to see the
 
 ## Todoを追加する
 
+追加ボタンを押し、追加フォームを表示します。
+フォームの内容を入力してAddボタンを押します。
+
 ## Todoを更新する
+
+Todoの右にある鉛筆アイコンをクリックして、編集モードにします。
+フォームの内容を編集してUpdateボタンを押します。
 
 ## Todoを完了する
 
+Todoの左端のチェックマークをクリックします。チェックがついたら完了になります。
+
 ## Todoを削除する
 
+Todoの右にあるゴミ箱アイコンをクリックします。
+
 ## Todoをフィルタリングする
+
+ヘッダーのラジオボタンを選択します。
+
+- All: すべてのTodoを表示します
+- Active: 未完了のTodoを表示します
+- Completed: 完了済みのTodoを表示します
