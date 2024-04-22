@@ -9,9 +9,6 @@ export const makeStore = () => {
     reducer: rootReducer,
   })
 }
-// export const store = configureStore({
-//   reducer: rootReducer,
-// })
 
 // Infer the type of makeStore
 export type AppStore = ReturnType<typeof makeStore>
