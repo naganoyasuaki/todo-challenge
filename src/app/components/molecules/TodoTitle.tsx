@@ -8,12 +8,16 @@ type TodoTitleProps = {
 const TodoTitle = ({ title, completed }: TodoTitleProps) => {
   if (completed) {
     return (
-      <Typography variant="body1" color={'#aaa'}>
+      <Typography variant="body1" color={'#aaa'} sx={{ overflowWrap: 'anywhere' }}>
         <s>{title}</s>
       </Typography>
     )
   } else {
-    return <Typography variant="body1">{title}</Typography>
+    return (
+      <Typography variant="body1" sx={{ overflowWrap: 'anywhere' }}>
+        {title}
+      </Typography>
+    )
   }
 }
 
